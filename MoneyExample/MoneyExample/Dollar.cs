@@ -4,17 +4,23 @@ namespace MoneyExample
 {
     internal class Dollar
     {
-        internal double amount;
-        private int v;
+        internal int  amount;
+        private int multiplier;
 
-        public Dollar(int v)
+        public Dollar(int amount)
         {
-            this.v = v;
+            this.amount = amount;
         }
 
-        internal void times(int v)
+
+
+        internal Dollar times(int multiplier)
         {
-            throw new NotImplementedException();
+                   //   return new Dollar(amount * multiplier);
+   
+            return new Dollar(amount * multiplier);
+
+
         }
     }
 }

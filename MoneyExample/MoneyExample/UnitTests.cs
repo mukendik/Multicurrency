@@ -14,8 +14,10 @@ namespace MoneyExample
         public void TestMultiplication()
         {
             Dollar five = new Dollar(5);
-            five.times(2);
-            Assert.AreEqual(10,five.amount);
+            Dollar product = five.times(2);
+            Assert.AreEqual(10,product.amount);
+            Dollar product2 = five.times(3);
+            Assert.AreEqual(15, product2.amount);
         }
     }
 }
